@@ -19,19 +19,33 @@ Step 7 — Deploy the image using Docker
 Step 8 — Terminate the AWS EC2 Instances.
 
 # Output:
+
 ![Alt Text](./output/1.png)
+
 ![Alt Text](./output/2.png)
+
 ![Alt Text](./output/3.png)
+
 ![Alt Text](./output/4.png)
+
 ![Alt Text](./output/5.png)
+
 ![Alt Text](./output/6.png)
+
 ![Alt Text](./output/7.png)
+
 ![Alt Text](./output/8.png)
+
 ![Alt Text](./output/9.png)
+
 ![Alt Text](./output/10.png)
+
 ![Alt Text](./output/11.png)
+
 ![Alt Text](./output/12.png)
+
 ![Alt Text](./output/13.png)
+
 
 # Configure CI/CD Pipeline in Jenkins:
 - Create a CI/CD pipeline in Jenkins to automate your application deployment.
