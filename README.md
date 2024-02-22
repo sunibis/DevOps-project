@@ -1,6 +1,6 @@
 # Zomato Clone Application Architecture:
 
-![Alt Text](./output/0.png)
+![Alt Text](./output/0.webp)
 
 # Getting Started with Deploying the Zomato App:
 
