@@ -1,3 +1,7 @@
+# Zomato Clone Application Architecture:
+
+![Alt Text](./output/0.png)
+
 # Getting Started with Deploying the Zomato App:
 
 Steps:-
