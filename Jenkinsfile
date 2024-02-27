@@ -15,7 +15,7 @@ pipeline{
         }
         stage('Checkout from Git'){
             steps{
-                git branch: 'master', url: 'https://github.com/iamajaygaur/zomato-DevSecOps-CICD.git'
+                git branch: 'master', url: 'https://github.com/sunibis/DevOps-project.git'
             }
         }
         stage("Sonarqube Analysis "){
@@ -54,20 +54,20 @@ pipeline{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
                        sh "docker build -t zomato ."
-                       sh "docker tag zomato iamajaygaur/zomato:latest "
-                       sh "docker push iamajaygaur/zomato:latest "
+                       sh "docker tag zomato sunibis/devops_project:latest "
+                       sh "docker push sunibis/devops_project:latest "
                     }
                 }
             }
         }
         stage("TRIVY"){
             steps{
-                sh "trivy image iamajaygaur/zomato:latest > trivy.txt" 
+                sh "trivy image sunibis/devops_project:latest > trivy.txt" 
             }
         }
 		stage('Deploy to container'){
          steps{
-            sh 'docker run -d --name zomato -p 3000:3000 iamajaygaur/zomato:latest'
+            sh 'docker run -d --name zomato -p 3000:3000 sunibis/devops_project:latest'
           }
         }
     }
